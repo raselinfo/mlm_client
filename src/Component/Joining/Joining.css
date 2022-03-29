@@ -1,0 +1,8 @@
+.j-b{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url('../../Image/Joining/join-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 30px;
+    
+}

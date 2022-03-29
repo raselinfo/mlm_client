@@ -1,0 +1,8 @@
+.r-l{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url('../../Image/Refer-List/rl-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-bottom: 30px;
+    
+}

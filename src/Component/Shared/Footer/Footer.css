@@ -1,0 +1,53 @@
+.footer {
+    background-color: black;
+    color           : white;
+    padding-top     : 50px;
+    padding-bottom  : 30px;
+}
+
+.copy {
+    text-align : center;
+    padding-top: 40px;
+    border-top : 1px solid white;
+
+}
+
+
+.d-grid {
+    display              : grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-bottom       : 40px;
+}
+
+.f-i-i {
+    border-radius: 10px !important;
+    height       : 72px;
+    width        : 170px;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .d-grid {
+        display              : grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom       : 40px;
+    }
+
+    .f-i-i {
+        border-radius: 10px !important;
+        height       : 72px;
+        width        : 130px;
+        margin-left  : 8%;
+        margin-top   : 5px;
+    }
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .f-i-i {
+        border-radius: 10px !important;
+        height       : 72px;
+        width        : 100px;
+        margin-top   : 5px;
+    }
+}

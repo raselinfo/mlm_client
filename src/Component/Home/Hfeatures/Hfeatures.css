@@ -1,0 +1,78 @@
+.h-fe{
+    padding-top: 100px;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url('../../../Image/Banner/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.hf-flex{
+    display: flex;
+}
+
+.hf-ib{
+    border: 1px solid rgb(221, 20, 221);
+    padding: 5px;
+}
+
+.hf-i{
+    height: 250px;
+    width: 450px;
+}
+
+.hf-info{
+    width: 50%;
+    margin-left: 100px;
+}
+
+.hf-h4{
+    color: rgb(211, 18, 211);
+    text-align: center;
+}
+
+.hf-p{
+    color: rgb(235, 235, 235);
+    font-weight: 600;
+}
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width:  480px) {
+    .hf-flex{
+        display: block;
+    }
+
+    .hf-info{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    .hf-i{
+        height: 200px;
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (min-width: 481px) and (max-width:  768px) {
+    .hf-i{
+        height: 200px;
+        width: 100%;
+    }
+
+    .hf-info{
+        width: 50%;
+        margin-left: 40px;
+    }
+
+    .hf-ib{
+        border: 1px solid rgb(221, 20, 221);
+        padding: 5px;
+        height: 213px;
+        margin-top: 30px;
+    }
+}

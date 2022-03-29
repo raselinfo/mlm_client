@@ -1,0 +1,8 @@
+.g-p{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)),url('../../Image/Generation-Report/gp-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-bottom: 30px;
+    
+}

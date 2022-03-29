@@ -1,0 +1,27 @@
+.c-b{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)),url('../../Image/Complain/com-bg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 30px;
+    
+}
+
+.c-m2{
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width:  480px) {
+    .c-m2{
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+}

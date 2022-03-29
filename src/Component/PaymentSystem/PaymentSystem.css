@@ -1,0 +1,8 @@
+.p-s{
+    background-image: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url('../../Image/Payment-System/ps-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 30px;
+    
+}

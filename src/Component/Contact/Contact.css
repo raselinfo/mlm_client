@@ -1,0 +1,52 @@
+.c-u{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)),url('../../Image/Contact/contact-us.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 30px;
+    
+}
+
+.contact{
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(233, 27, 233, 0.082);
+    box-shadow: 0px 0px 10px 1px rgb(211, 209, 209);
+    border-radius: 5px;
+}
+
+
+
+.c-m{
+    border-right: 2px solid rgb(236, 21, 236);
+    padding: 30px;
+    width: 50%;
+
+}
+
+.c-i-in{
+    width: 45%;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.text{
+    height: 120px;
+}
+
+.con-i{
+    font-size: 45px;
+    border: 2px solid rgb(219, 16, 219);
+    padding: 5px;
+    border-radius: 50%;
+    color: rgb(228, 19, 228);
+}
+
+.con-h6{
+    margin-left: 15px;
+    color: rgb(228, 19, 228);
+    font-weight: 700;
+}

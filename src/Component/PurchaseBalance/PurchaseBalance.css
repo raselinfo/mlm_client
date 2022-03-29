@@ -1,0 +1,12 @@
+.p-b{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url('../../Image/Purchase-Balance/pb-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-bottom: 30px;
+    
+}
+
+.pbb{
+    background-color: rgb(238, 238, 238);
+}

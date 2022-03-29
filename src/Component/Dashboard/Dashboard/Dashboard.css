@@ -1,0 +1,17 @@
+.d-bg{
+    background-color: rgb(73, 73, 73);
+    height: 100vh;
+}
+.d2-bg{
+    background-color: rgb(73, 73, 73) !important;
+}
+
+.li-d{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    background-color: rgb(53, 53, 53);
+    width: 100%;
+    text-align: center;
+    padding: 7px 10px 7px 10px;
+}

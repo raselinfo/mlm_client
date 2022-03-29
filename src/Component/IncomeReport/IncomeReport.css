@@ -1,0 +1,11 @@
+.i-r{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6)),url('../../Image/Income-Report/ir-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-bottom: 30px;  
+}
+
+.inc{
+    background-color: rgb(238, 238, 238);
+}
