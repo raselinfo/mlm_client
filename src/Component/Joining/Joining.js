@@ -21,8 +21,8 @@ const ComponentName = () => {
     const [district, setDistrict] = useState('');
     const [upzilla, setUpzilla] = useState('');
     const [post, setPost] = useState('');
+    const [email, setEmail] = useState('');
     const [profilePic, setProfilePic] = useState(null);
-
     function handleImageUpload(e) {
         let file = e.target.files[0]
         let formData = new FormData()
@@ -37,8 +37,6 @@ const ComponentName = () => {
 
     const handleSubmit = e => {
         e.preventDefault()
-        let email = localStorage.getItem("email")
-
         if (!profilePic) {
             return;
         }
@@ -94,7 +92,7 @@ const ComponentName = () => {
             <div className='pu-from container mt-5'>
 
                 <form onSubmit={handleSubmit} className="up-form" >
-
+                    <p>My Email : {localStorage.getItem("email")}</p>
                     <h4 className='up-h4'></h4>
                     <h6 className='up-p mt-2'>Account Type</h6>
                     <select className="up-input mt-1" aria-label="Select Account" onChange={e => setAct(e.target.value)}>
@@ -120,6 +118,9 @@ const ComponentName = () => {
                     <br />
                     <h6 className='up-p mt-2'>Your Name</h6>
                     <input className="up-input" type="text" placeholder="Name" onChange={e => setName(e.target.value)} />
+                    <br />
+                    <h6 className='up-p mt-2'>Your Email</h6>
+                    <input className="up-input" type="text" placeholder="Email" onChange={e => setEmail(e.target.value)} />
                     <br />
                     <h6 className='up-p mt-2'>Father's Name</h6>
                     <input className="up-input" type="text" placeholder="Father's Name" onChange={e => setFatherName(e.target.value)} />
@@ -229,9 +230,9 @@ const ComponentName = () => {
                     <input className="up-input " placeholder="Upzilla" onChange={e => setUpzilla(e.target.value)} />
                     <br />
                     <h6 className='up-p mt-2'>Post office</h6>
-                    <input className="up-input " placeholder="Post" />
+                    <input className="up-input" onChange={e => setPost(e.target.value)}  placeholder="Post" />
                     <br />
-                    <input className="up-b mt-3" type="submit" value="Submit" onChange={e => setPost(e.target.value)} />
+                    <input className="up-b mt-3" type="submit" value="Submit" />
 
                 </form>
             </div>

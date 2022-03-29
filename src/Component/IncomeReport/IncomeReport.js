@@ -23,7 +23,7 @@ const ComponentName = () => {
 
     useEffect(() => {
         let email = localStorage.getItem("email")
-        fetch(`https://mlmserver.herokuapp.com/incomReport/${email}`)
+        fetch(`http://localhost:5000/incomReport/${email}`)
             .then(res => res.json())
             .then(data => {
                 setIncomReport(data)
