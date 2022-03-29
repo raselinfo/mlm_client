@@ -90,10 +90,10 @@ export default class CenteredTree extends React.PureComponent {
   };
 
   async componentDidMount() {
-    let result = await fetch(
-      `https://mlmserver.herokuapp.com/unilaveltree/623d8ae31da271d0b48f6995`
-    );
+    let email=localStorage.getItem("email")
+    let result = await fetch(`http://localhost:5000/unilaveltree/${email}`);
     let data = await result.json();
+    console.log(data)
     this.setState({ debugData: data });
 
     const dimensions = this.treeContainer.getBoundingClientRect();
