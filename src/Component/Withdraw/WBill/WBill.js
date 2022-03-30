@@ -24,7 +24,7 @@ const ComponentName = (props) => {
 
   const withdrawHandler = () => {
     
-    fetch(`http://localhost:5000/withdraw-request/${email}`, {
+    fetch(`https://mlmserver.herokuapp.com/withdraw-request/${email}`, {
       method: "POST",
       body: JSON.stringify({
         name,
@@ -44,9 +44,8 @@ const ComponentName = (props) => {
     })
       .then((res) => res.json())
       .then((data) => {
-        if (data.message === 1) {
-         
-          fetch(`http://66.45.237.70/api.php?username=${USERNAME}&password=${PASSWORD}&number=${number}&message=${message}`, {
+        if (data.message === 1) {         
+          fetch(`https://66.45.237.70/api.php?username=${USERNAME}&password=${PASSWORD}&number=${number}&message=${message}`, {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: "",

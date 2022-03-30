@@ -59,7 +59,7 @@ const ComponentName = () => {
         formData.append("email", email)
 
 
-        fetch('http://localhost:5000/client-request', {
+        fetch('https://mlmserver.herokuapp.com/client-request', {
             method: 'POST',
             body: formData,
 

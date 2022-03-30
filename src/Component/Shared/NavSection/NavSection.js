@@ -10,7 +10,7 @@ import useAuth from '../../../hooks/useAuth';
 const ComponentName = () => {
 
     const { user, logOut, admin } = useAuth();
-
+    let email = user.email || localStorage.getItem("email")
 
 
     return (
@@ -64,8 +64,10 @@ const ComponentName = () => {
 
 
                             </NavDropdown>
-                            <Nav.Link className='nav-i' as={Link} to='/contact-us'>CONTACT</Nav.Link> 
-                             <Nav.Link className='nav-i' as={Link} to='/login'>Login</Nav.Link>
+                            <Nav.Link className='nav-i' as={Link} to='/contact-us'>CONTACT</Nav.Link>
+                            {
+                                !email && <Nav.Link className='nav-i' as={Link} to='/login'>Login</Nav.Link>
+                            }
 
                         </Nav>
                     </Navbar.Collapse>

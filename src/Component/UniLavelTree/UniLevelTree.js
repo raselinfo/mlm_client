@@ -91,7 +91,7 @@ export default class CenteredTree extends React.PureComponent {
 
   async componentDidMount() {
     let email=localStorage.getItem("email")
-    let result = await fetch(`http://localhost:5000/unilaveltree/${email}`);
+    let result = await fetch(`https://mlmserver.herokuapp.com/unilaveltree/${email}`);
     let data = await result.json();
     console.log(data)
     this.setState({ debugData: data });
@@ -127,11 +127,7 @@ export default class CenteredTree extends React.PureComponent {
           <NavSection />
           <div className="container">
             <h1 className="p-i-h1">Unilevel Tree</h1>
-            <p className="p-i-p">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A itaque
-              et voluptatum non fugiat saepe in. <br />
-              Quo architecto dicta temporibus.
-            </p>
+
           </div>
         </div>
 
