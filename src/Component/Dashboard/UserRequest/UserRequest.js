@@ -14,8 +14,8 @@ const UserRequest = () => {
     // Send Message to the user
 
     const activeUser = (id, phoneNumber) => {
-        let USERNAME = process.env.REACT_APP_USERNAME
-        let PASSWORD = process.env.REACT_APP_PASSWORD
+        // let USERNAME = "saiful682"
+        let PASSWORD = 'lUCvYcYk94E41RH26okbUOYYMnf9wDUE86Ef6dO9'
         let number = `88${phoneNumber}`
         let message = `Congratulation! You have joined successfully and created an account in SB One Global Shop.Your balance paid by the company is also added in your account.Thank You.`
 
@@ -30,31 +30,37 @@ const UserRequest = () => {
         })
             .then(res => res.json())
             .then(data => {
+                console.log(data)
                 if (data.message === 1) {
-                    
-                    fetch(`https://66.45.237.70/api.php?username=${USERNAME}&password=${PASSWORD}&number=${number}&message=${message}`, {
+                    fetch(`https://api.sms.net.bd/sendsms?api_key=${PASSWORD}&msg=${message}&to=${number}`, {
                         method: "POST",
-                        headers: {
-                            "Content-Type": "application/x-www-form-urlencoded",
-                        },
-                        body: "",
-                        redirect: 'follow'
+                    }).then(res => {
+                        console.log(res)
                     })
-                        .then((res) => {                            
-                            return res.text()
-                        })
-                        .then(result => {
-                           
 
-                        }).catch(err => {
-                           
-                            setIsActive(!isActive)
-                        })
+                    // fetch(`https://66.45.237.70/api.php?username=${USERNAME}&password=${PASSWORD}&number=${number}&message=${message}`, {
+                    //     method: "POST",
+                    //     headers: {
+                    //         "Content-Type": "application/x-www-form-urlencoded",
+                    //     },
+                    //     body: "",
+                    //     redirect: 'follow'
+                    // })
+                    //     .then((res) => {
+                    //         return res.text()
+                    //     })
+                    //     .then(result => {
+
+
+                    //     }).catch(err => {
+
+                    //         setIsActive(!isActive)
+                    //     })
 
                 }
             })
             .catch(err => {
-              
+
             })
 
     }

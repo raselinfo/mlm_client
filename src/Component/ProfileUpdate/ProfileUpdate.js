@@ -20,7 +20,7 @@ const ComponentName = () => {
     let email = localStorage.getItem("email")
     const handleSubmit = (e) => {
         e.preventDefault()
-        fetch(`http://localhost:5000/clientUpdate/${email}`, {
+        fetch(`https://mlmserver.herokuapp.com/clientUpdate/${email}`, {
             method: "PUT",
             body: JSON.stringify({
                 name,
